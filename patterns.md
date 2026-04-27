@@ -90,12 +90,10 @@ int range_sum = prefix[r + 1] - prefix[l];
 
 When moving on a 2D grid, the right distance formula depends on allowed directions:
 
-```
 | Movement | Metric | Formula |
 |---|---|---|
-| 4 directions (up/down/left/right) | **Manhattan** | `\|r1-r2\| + \|c1-c2\|` |
-| 8 directions (+ diagonals) | **Chebyshev** | `max(\|r1-r2\|, \|c1-c2\|)` |
-```
+| 4 directions (up/down/left/right) | **Manhattan** | abs(r1-r2) + abs(c1-c2) |
+| 8 directions (+ diagonals) | **Chebyshev** | max(abs(r1-r2), abs(c1-c2)) |
 
 ```c
 int manhattan(int r1, int c1, int r2, int c2) {
