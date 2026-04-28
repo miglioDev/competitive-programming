@@ -1,12 +1,11 @@
 # Mistakes Log — Competitive Programming
 
-> Every entry here is a lesson
-> Pattern: identify the error → understand *why* it happened → write the fix.
+> I keep useful errors in this log 
 
 ## Entry Template
 
 ```
-### [Problem] XXXX - Problem Name (Rating: 800)
+### [Problem] XXXX - Problem Name (Rating: x00)
 **Date:** YYYY-MM-DD
 **Mistake type:** [Wrong Answer / Off-by-one / Overflow / Wrong formula / Edge case / Logic error]
 **Link:** 
