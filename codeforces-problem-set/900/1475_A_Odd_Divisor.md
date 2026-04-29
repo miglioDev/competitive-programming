@@ -83,3 +83,5 @@ Complexity: **O(1)** per test case vs O(log n) for the divide-loop approach.
 1. **Never use `atoi` for competitive programming** Always `scanf("%lld", &n)` for `long long`.
 2. **Bit tricks for powers of 2:** `n & (n-1) == 0` is a standard idiom i didn't know.
 3. **When you get TLE on test 1**, suspect an infinite loop caused by wrong data (overflow, bad parsing), not just slow algorithm.
+
+4. **Read** and **process** data at the same time.

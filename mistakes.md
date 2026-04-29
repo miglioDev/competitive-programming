@@ -13,7 +13,8 @@
 **What I did wrong:**
 
 **Why it was wrong:**
-Explain the underlying reason — not just "I forgot", but *what assumption was broken*.
+explain the underlying reason 
+what assumption was broken
 
 **The fix:**
 corrected code
