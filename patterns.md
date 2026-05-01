@@ -3,7 +3,7 @@
 > Reusable patterns, formulas, and reasoning frameworks.
 > Update this every time something generalizes across problems.
 
-## 0. Before Writing Any Code — Mental Checklist
+## 0. Checklist Before Writing Any Code
 
 1. **What are the constraints?** (`n ≤ ?`, value range, time limit)
 2. **What exactly is being asked?** (min, max, count, yes/no, construction)
@@ -29,9 +29,9 @@ Example: `ceil(7 / 3)` = 3
 - With formula: `(7 + 2) / 3 = 9 / 3` = **3** 
 - Without: `7 / 3` = **2** ✗
 
-## 2. Overflow — Always Think About It
+## 2. Overflow 
 
-In C, `int` holds up to ~2 × 10^9. A sum of `n ≤ 10^5` values up to `10^9` can reach `10^14` — this **overflows silently**.
+In C, `int` holds up to ~2 × 10^9. A sum of `n ≤ 10^5` values up to `10^9` can reach `10^14`, this **overflows silently**.
 
 **Rule of thumb:**
 - If `n × max_value` can exceed 2 × 10^9, use `long long`.
