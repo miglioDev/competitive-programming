@@ -80,11 +80,11 @@ The two candidates:
 |---|---|---|
 | Alternating | `()()()...` | `()()()` |
 | Grouped | `(((...)))` | `((()))` |
-.
 
 ---
 
-Bitwise shortcut was possible in both
+Bitwise shortcut was possible in both.
+
 I should have generated both strings in a single loop and printed  when the decision yes/no was made. 
 
 
