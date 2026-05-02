@@ -8,11 +8,10 @@
 Given a balanced bracket sequence `s` of length `n`, construct **any** balanced bracket sequence of length `2n` that does **not** contain `s` as a substring. If impossible, print `NO`.
 
 
-##My Attempt 
+##My solution 
 ```c
 #include <stdio.h>
 #include <string.h>
-#include <ctype.h>
 
 void solve()
 {
