@@ -56,6 +56,10 @@ Time wraps around midnight, subtracting hours/minutes separately cannot model th
 
 Wrong output formatting
 
+Notes:
+first: `total = h * 60 + m`.
+2. **Circular time = modular arithmetic.** `(a - b + 1440) % 1440` gives the forward distance from b to a on a 24h clock.
+
 ## Official Solution (translated from C++ to C)
 
 ```c
@@ -92,14 +96,8 @@ int main()
 }
 ```
 
-## Why this works — the core formula
+## Why this works
 
-Think of one day as a circular 1440-minute clock:
+The core formula, think of one day as a circular 1440-minute clock:
 
-Convert everything to minutes. Subtract alarm from wake-up. If negative, add 1440 to wrap around midnight. The minimum over all alarms is your answer.
-
-
-## Takeaways
-
-1. **Never compare time as separate H and M.** Always convert to total minutes first: `total = h * 60 + m`.
-2. **Circular time = modular arithmetic.** `(a - b + 1440) % 1440` gives the forward distance from b to a on a 24h clock.
+Convert everything to minutes. Subtract alarm from wake-up. If negative, add 1440 to wrap around midnight. The minimum over all alarms is the answer.
